@@ -1,0 +1,37 @@
+* 110A Component Library
+* LTspice Models for Vintage discrete opamp
+
+* Diode Model
+.model 1N416A D(
++ IS=2e-9
++ N=1.9
++ RS=1
++ CJO=3p
++ M=0.33
++ TT=4e-9
++ BV=75
++ IBV=0.1m)
+
+* NPN Transistor Model
+.model 2N3566 NPN(
++ BF=200
++ IS=1e-14
++ VAF=80
++ CJE=20p
++ CJC=25p
++ TF=4e-9
++ RB=50
++ RC=1
++ RE=0.5)
+
+* PNP Transistor Model
+.model 2N3645 PNP(
++ BF=150
++ IS=1e-14
++ VAF=60
++ CJE=25p
++ CJC=30p
++ TF=5e-9
++ RB=60
++ RC=1
++ RE=0.5)
